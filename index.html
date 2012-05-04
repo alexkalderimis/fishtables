@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html>
@@ -692,7 +691,7 @@ jQuery(function() {
             var target = $(this).next();
             if (target.children().length == 0) {
                 var key = $(this).data("key");
-                var view = new intermine.query.results.CompactView(service, queries[key], {}, {pageSize: 10});
+                var view = new intermine.query.results.CompactView(service, queries[key], {}, {pageSize: 5});
                 view.$el.appendTo(target);
                 view.render();
             }
